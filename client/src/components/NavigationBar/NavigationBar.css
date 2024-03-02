@@ -1,0 +1,31 @@
+/* NavigationBar.css */
+
+.navbar {
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Evenly space the links across the navbar */
+    align-items: center; /* Center-align the items vertically */
+    width: 80%; /* Ensure the navbar spans the full width of the viewport */
+    padding: 0 10px; /* Add some padding on the sides if needed */
+}
+
+
+.navbar a {
+    display: flex; /* Display them as flex elements */
+    color: white; /* Text color */
+    text-align: center; /* Center-align the text */
+    justify-content: center;
+    align-items: center;
+    padding: 1% 5%; /* Adjust padding for better spacing, can be tweaked */
+    
+    text-decoration: none; /* Remove default underline */
+    font-size: 180%; 
+    text-shadow: 
+                0 0 10px #ffffff,
+                3px 2px 0px rgba(0, 85, 255, 0.6),
+                -3px -2px 0px rgba(164, 3, 3, 0.5);
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Light gray background color */
+    color: black; /* Change text color to black */
+}

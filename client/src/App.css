@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'VCR';
+  src: url('./fonts/vcr.ttf') format('truetype');
+}
+
+body {
+  font-family: 'VCR'; /* Fallback to sans-serif if 'VCR' is not available */
+}
