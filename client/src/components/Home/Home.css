@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen{
+    .crt {
+      animation: scanlines infinite 55s linear ;
+    }
+} 
+@keyframes scanlines {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 -10px;
+    }
+}
+
+.crt {
+    /* scanlines */
+      background: linear-gradient(to top, #000000 10%, #000000 20%, #343434 50%, #333333 100%);
+      background-size: cover;
+      background-size: 100% 1px;
+    
+    /* retro stuff */
+    font-family: 'VCR';
+      /* color: #ffffff;
+      font-size: 50px;
+      text-align: center; */
+      text-shadow: 
+                0 0 10px #ffffff,
+                6px 4px 0px rgba(0, 85, 255, 0.6),
+                -6px -4px 0px rgba(164, 3, 3, 0.5);
+      
+    
+    /* flex stuff */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /*filter: blur(.8px);*/
+      
+
+    /* full screen */
+      height: 100%;
+      width: 100%;
+      position: fixed; /* Or absolute, depending on your needs */
+      top: 0;
+      left: 0;
+}
+
+.crt h1 {
+    /* retro stuff */
+    font-family: 'VCR';
+    color: #ffffff;
+    font-size: 100px;
+    text-align: center;
+    /* text-shadow: 
+              0 0 10px #ffffff,
+              6px 4px 0px rgba(119, 119, 119, 0.5);  */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.landingPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
