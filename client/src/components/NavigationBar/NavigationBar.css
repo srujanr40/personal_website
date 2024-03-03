@@ -10,34 +10,24 @@
 
 .navbar a {
     display: flex; /* Display them as flex elements */
+    text-decoration: none; /* Remove default underline */
+}
+
+.styled-button {
+    display: flex; /* Display them as flex elements */
+    background-color: transparent;
+    border: none;
     color: white; /* Text color */
     text-align: center; /* Center-align the text */
     justify-content: center;
     align-items: center;
     padding: 1% 5%; /* Adjust padding for better spacing, can be tweaked */
     
+    font-family: 'VCR';
     text-decoration: none; /* Remove default underline */
-    font-size: 180%; 
+    font-size: 170%; 
     text-shadow: 
                 0 0 10px #ffffff,
                 3px 2px 0px rgba(0, 85, 255, 0.6),
                 -3px -2px 0px rgba(164, 3, 3, 0.5);
-}
-
-.navbar a:hover {
-    animation: blinkBackground 0.75s infinite; /* Apply the blinking animation on hover */
-}
-
-
-@keyframes blinkBackground {
-    0% {
-        background-color: initial; /* Original background color */
-    }
-    50% {
-        background-color: #ddd; /* Blinking color */
-        color: black;
-    }
-    100% {
-        background-color: initial; /* Original background color */
-    }
 }

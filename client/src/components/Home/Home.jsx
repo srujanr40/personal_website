@@ -1,7 +1,7 @@
 import './Home.css';
 import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import NavigationBar from '../NavigationBar/NavigationBar';
 
 export default function Home() {
