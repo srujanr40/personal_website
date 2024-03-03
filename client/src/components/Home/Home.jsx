@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import NavigationBar from '../NavigationBar/NavigationBar';
 import HomeContent from '../HomeContent/HomeContent';
+import Timeline from '../Timeline/Timeline';
 
 export default function Home() {
     const [introDone, setIntroDone] = useState(false);
@@ -68,6 +69,7 @@ export default function Home() {
                         <NavigationBar />
                     </motion.div>
                     <HomeContent />
+                    <Timeline />
                 </motion.div>
             )}
         </div>

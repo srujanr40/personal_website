@@ -1,0 +1,14 @@
+line {
+    stroke-width: 10px;
+    stroke-linecap: round;
+    fill: transparent;
+}
+
+
+.timeline_line {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    
+}
+  

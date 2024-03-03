@@ -1,11 +1,5 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 @media screen{
-    .crt {
+    .body {
       animation: scanlines infinite 55s linear ;
     }
 } 
@@ -18,12 +12,18 @@ html, body {
     }
 }
 
-.crt {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
     /* scanlines */
-      background: linear-gradient(to top, #000000 10%, #000000 20%, #181818 50%, #333333 100%);
-      background-size: cover;
-      background-size: 100% 1px;
-    
+    background: linear-gradient(to top, #000000 10%, #000000 20%, #181818 50%, #333333 100%);
+    background-size: cover;
+    background-size: 100% 1px;
+}
+
+.crt {
     /* retro stuff */
       font-family: 'VCR';
       /* color: #ffffff;
@@ -46,9 +46,10 @@ html, body {
     /* full screen */
       height: 100%;
       width: 100%;
-      position: fixed; /* Or absolute, depending on your needs */
+      position: fixed;
       top: 0;
       left: 0;
+      overflow-y: auto;
 }
 
 .crt h1 {
