@@ -2,10 +2,9 @@
 
 .navbar {
     display: flex; /* Use Flexbox */
-    justify-content: space-between; /* Evenly space the links across the navbar */
+    justify-content: space-evenly; /* Evenly space the links across the navbar */
     align-items: center; /* Center-align the items vertically */
-    width: 80%; /* Ensure the navbar spans the full width of the viewport */
-    padding: 0 10px; /* Add some padding on the sides if needed */
+    width: 100%; /* Ensure the navbar spans the full width of the viewport */
 }
 
 
@@ -26,6 +25,19 @@
 }
 
 .navbar a:hover {
-    background-color: #ddd; /* Light gray background color */
-    color: black; /* Change text color to black */
+    animation: blinkBackground 0.75s infinite; /* Apply the blinking animation on hover */
+}
+
+
+@keyframes blinkBackground {
+    0% {
+        background-color: initial; /* Original background color */
+    }
+    50% {
+        background-color: #ddd; /* Blinking color */
+        color: black;
+    }
+    100% {
+        background-color: initial; /* Original background color */
+    }
 }
