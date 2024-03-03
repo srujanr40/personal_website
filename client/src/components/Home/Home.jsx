@@ -1,23 +1,37 @@
-import './Home.css'
-import { useState, useEffect } from 'react'; // Import useEffect
+import './Home.css';
+import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
 import NavigationBar from '../NavigationBar/NavigationBar';
 
-export default function Home () {
-    const [introDone, setIntroDone] = useState(false)
+export default function Home() {
+    const [introDone, setIntroDone] = useState(false);
+    const [textDone, setTextDone] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
+        const textTimer = setTimeout(() => {
+            setTextDone(true);
+        }, 13500);
+        const introTimer = setTimeout(() => {
             setIntroDone(true);
-        }, 18000); // Set a timer for 20 seconds
+        }, 17500);
 
-        return () => clearTimeout(timer); // Cleanup the timer
-    }, []); // Empty dependency array means this effect runs once on mount
+        return () => {
+            clearTimeout(textTimer);
+            clearTimeout(introTimer);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (textDone) {
+            // This effect is now handled by CSS for smooth transition
+        }
+    }, [textDone]);
 
     return (
         <div className='crt' onClick={() => setIntroDone(true)}>
-            {!introDone && ( // Only render this div if introDone is false
-                <div className='intro'>
+            {!introDone && (
+                <motion.div className={`intro ${textDone ? 'start' : ''}`}>
                     <TypeAnimation
                         cursor={true}
                         sequence={[
@@ -26,30 +40,27 @@ export default function Home () {
                             "IT'S GREAT TO HAVE YOU HERE",
                             1000,
                             "FEEL FREE TO BROWSE AROUND!",
-                            1000,
-                            ""
                         ]}
                         wrapper='h1'
-                        speed = {0.5}
-                        repeat = {0}
+                        speed={0.5}
+                        repeat={0}
                     />
-                </div>
+                </motion.div>
             )}
-            {introDone && ( // Only render this div if introDone is true
-                <div className='landingPage'>
+            {introDone && (
+                <motion.div className='landingPage'>
                     <TypeAnimation
                         cursor={true}
-                        sequence={[
-                            "WELCOME!"
-                        ]}
+                        sequence={["WELCOME!"]}
                         wrapper='h1'
-                        speed = {1}
-                        repeat = {0}
+                        speed={1}
+                        repeat={0}
                     />
-                    <NavigationBar />
-                </div>
+                    <motion.div>
+                        <NavigationBar />
+                    </motion.div>
+                </motion.div>
             )}
         </div>
-    )
+    );
 }
-

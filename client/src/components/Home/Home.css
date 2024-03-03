@@ -20,7 +20,7 @@ html, body {
 
 .crt {
     /* scanlines */
-      background: linear-gradient(to top, #000000 10%, #000000 20%, #343434 50%, #333333 100%);
+      background: linear-gradient(to top, #000000 10%, #000000 20%, #181818 50%, #333333 100%);
       background-size: cover;
       background-size: 100% 1px;
     
@@ -83,5 +83,16 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure full width to center content initially */
+    transition: transform 2s ease; /* Smooth transition for the transform */
+}
+
+.intro.start {
+    transform: translateY(-40%); /* Adjust based on your layout for the start position */
 }
 
