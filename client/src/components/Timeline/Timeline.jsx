@@ -18,7 +18,7 @@ const draw = {
 
 export default function Timeline() {
     return (
-        <motion.div className="timeine_line">
+        <motion.div className="timeline_div">
             <motion.svg
                 width="600"
                 height="600"
@@ -26,7 +26,8 @@ export default function Timeline() {
                 initial="hidden"
                 animate="visible"
             >
-            <motion.line
+            <motion.line 
+                className= 'timeline_line'
                 x1="30"
                 y1="30"
                 x2="30"

@@ -1,14 +1,38 @@
 line {
+    position: relative;
     stroke-width: 10px;
-    stroke-linecap: round;
+    stroke-linecap: square;
     fill: transparent;
+    box-shadow: 
+                0 0 10px #ffffff,
+                6px 4px 0px rgba(0, 85, 255, 0.6),
+                -6px -4px 0px rgba(164, 3, 3, 0.5);
+}
+
+line::before {
+    content: 'a '; /* Add content to the pseudo-element */
+    position: absolute; /* Set position to absolute for precise placement */
+    top: 50%; /* Position the dot vertically in the middle of the line */
+    left: 50%; /* Position the dot horizontally in the middle of the line */
+    transform: translate(-50%, -50%); /* Center the dot */
+    width: 8px; /* Set the width of the dot */
+    height: 8px; /* Set the height of the dot */
+    border-radius: 50%; /* Make the dot circular */
+    background-color: #ff0000; /* Set the color of the dot */
+}
+
+.timeline_line {
+    filter: drop-shadow(0 0 10px #ffffff) 
+            drop-shadow(3px 2px 0px rgba(0, 85, 255, 0.6)) 
+            drop-shadow(-3px -2px 0px rgba(164, 3, 3, 0.5));
+    
 }
 
 
-.timeline_line {
+.timeline_div {
     display: flex;
     width: 100%;
+    padding-left: 10%;
     justify-content: flex-start;
-    
 }
   
