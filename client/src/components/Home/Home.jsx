@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import NavigationBar from '../NavigationBar/NavigationBar';
+import HomeContent from '../HomeContent/HomeContent';
 
 export default function Home() {
     const [introDone, setIntroDone] = useState(false);
@@ -66,6 +67,7 @@ export default function Home() {
                     }}>
                         <NavigationBar />
                     </motion.div>
+                    <HomeContent />
                 </motion.div>
             )}
         </div>
