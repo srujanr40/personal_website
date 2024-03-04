@@ -6,3 +6,65 @@
 body {
   font-family: 'VCR'; /* Fallback to sans-serif if 'VCR' is not available */
 }
+
+.crt {
+  /* retro stuff */
+    font-family: 'VCR';
+    /* color: #ffffff;
+    font-size: 50px;
+    text-align: center; */
+    text-shadow: 
+              0 0 10px #ffffff,
+              6px 4px 0px rgba(0, 85, 255, 0.6),
+              -6px -4px 0px rgba(164, 3, 3, 0.5);
+    
+  
+  /* flex stuff */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*filter: blur(.8px);*/
+    
+
+  /* full screen */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.crt h1 {
+  /* retro stuff */
+  font-family: 'VCR';
+  color: #ffffff;
+  font-size: 100px;
+  text-align: center;
+  /* text-shadow: 
+            0 0 10px #ffffff,
+            6px 4px 0px rgba(119, 119, 119, 0.5);  */
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensure full width to center content initially */
+  transition: transform 2s ease; /* Smooth transition for the transform */
+}
+
+.intro.start {
+  transform: translateY(-40%); /* Adjust based on your layout for the start position */
+}
