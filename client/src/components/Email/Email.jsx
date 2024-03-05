@@ -22,7 +22,7 @@ export default function Email() {
 
 
     return (
-        <div className = 'intro_text'>
+        <div className = 'email_text'>
             <p>
                 {"Contact me: \u00A0"}
             </p>

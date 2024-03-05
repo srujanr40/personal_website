@@ -1,0 +1,31 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr;
+    gap: 10px;
+}
+
+.about_subtitle {
+    font-size: 140%;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    top: -0.3em;
+    right: 4em;
+    
+
+    font-family: 'lora';
+    color: #dd861d;
+    grid-column: 2;
+}
+
+.about_text {
+    position: relative;
+    font-family: 'lora';
+    text-align: start;
+    font-size: 120%;
+    color: #3d3d3d;
+    grid-column: 3;
+}
+
+
