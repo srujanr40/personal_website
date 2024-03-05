@@ -6,7 +6,6 @@ import {
 import './App.css'
 import './fonts/vcr.ttf'
 import Home from './components/Home/Home'
-import About from './components/About/About'
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
           </Routes>
         </main>
       </Router>

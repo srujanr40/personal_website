@@ -1,0 +1,32 @@
+.email {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.email p {
+    position: relative;
+    z-index: 1;
+    border-bottom: 3px solid rgb(255, 170, 42); 
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.highlight {
+    position: absolute;
+    top: 1em;
+    left: 0;
+    right: 0;
+    bottom: 1em;
+    background-color: rgb(255, 170, 42); /* Highlight color */
+    transform-origin: bottom;
+    z-index: 0;
+}
+
+.intro_text {
+    display: inline-flex;
+    font-family: 'lora';
+    font-size: 200%;
+    grid-column: 2;
+    color: #3d3d3d;
+}
