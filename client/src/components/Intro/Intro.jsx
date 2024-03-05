@@ -17,7 +17,7 @@ export default function Intro() {
                 repeatType: "loop",
             },
         },
-    };
+    }
 
     const bounceVariants = {
         bounce: {
@@ -30,13 +30,27 @@ export default function Intro() {
                 },
             },
         },
-    };
+    }
 
     const fadeVariants = {
         initial: { opacity: 0 },
         animate: { opacity: 1 },
         exit: { opacity: 0 },
-    };
+    }
+
+    const cardVariants = {
+        offscreen: {
+          opacity: 0
+        },
+        onscreen: {
+          opacity: 1,
+          transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 1.5,
+          }
+        }
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -73,13 +87,21 @@ export default function Intro() {
                     />
                 </div>
                 <br />
-                <div className='intro_text'>
-                    <p>
-                        I'm a full-stack developer. I'm here to turn caffeine into code and dreams into digital reality.
-                    </p>
-                </div>
-                <br />
-                <Email />
+                <motion.div 
+                    className='intro_card'
+                    variants={cardVariants}
+                    initial='offscreen'
+                    whileInView='onscreen'
+                    viewport={{ once: true }}
+                >
+                    <div className='intro_text'>
+                        <p>
+                            I'm a full-stack developer. I'm here to turn caffeine into code and dreams into digital reality.
+                        </p>
+                    </div>
+                    <br />
+                    <Email />
+                </motion.div>
                 <AnimatePresence>
                     {showScrollPrompt && (
                         <motion.div

@@ -1,6 +1,7 @@
 import React from "react";
 import Intro from "../Intro/Intro";
 import AboutMe from "../AboutMe/AboutMe";
+import { motion } from "framer-motion";
 
 import "./Home.css"
 

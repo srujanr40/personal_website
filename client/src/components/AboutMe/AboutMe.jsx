@@ -37,7 +37,7 @@ export default function AboutMe() {
                 </p>
                 <p>
                     As a Software Engineer, I have experience working with full stack technologies. My goal is to build applications
-                    that are robust, scalable, and accessible
+                    that are robust, scalable, and accessible.
                 </p>
             </div>
         </motion.div>

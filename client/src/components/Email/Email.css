@@ -1,6 +1,6 @@
 .email {
     position: relative;
-    display: inline-block;
+    display: inline-flexbox;
     cursor: pointer;
 }
 
@@ -26,6 +26,7 @@
 .email_text {
     display: inline-flex;
     font-family: 'lora';
+    padding-top: 5%;
     font-size: 150%;
     grid-column: 2;
     color: #3d3d3d;
