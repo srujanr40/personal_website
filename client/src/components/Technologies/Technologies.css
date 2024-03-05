@@ -1,0 +1,77 @@
+@media screen and (max-width: 600px) {
+    .technologies {
+        display: grid;
+        grid-template-columns: 1fr 1fr 4fr;
+        gap: 1%;
+        padding: 20%;
+    }
+
+    .technologies_list {
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .technologies {
+        display: grid;
+        grid-template-columns: 1fr 1fr 4fr 1fr;
+        gap: 1%;
+    }
+
+    .technologies_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1%;
+    }
+
+    .languages {
+        grid-column: 1;
+        align-self: auto;
+    }
+
+    .frameworks {
+        grid-column: 2;
+        align-self: start;
+    }
+
+    .developer_tools {
+        grid-column: 3;
+        align-self: start;
+    }
+
+    .libraries {
+        grid-column: 4;
+        align-self: start;
+    }
+}
+
+.technologies_subtitle {
+    font-size: 150%;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    padding-top: 50%;
+    justify-content: flex-end;
+    right: 4em;
+    
+
+    font-family: 'lora';
+    color: #dd861d;
+    grid-column: 2;
+}
+
+.technologies_list {
+    font-family: 'lora';
+    text-align: start;
+    font-size: 150%;
+    color: #575757;
+    grid-column: 3;
+    margin-bottom: 5px;
+}
+
+.technologies_list p {
+    margin-bottom: -15px;
+}
+
