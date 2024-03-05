@@ -3,6 +3,17 @@
   src: url('./fonts/vcr.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'lora';
+  src: url('./fonts/lora.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lora-italic';
+  src: url('./fonts/lora-italic.ttf') format('truetype');
+}
+
 body {
-  font-family: 'VCR'; /* Fallback to sans-serif if 'VCR' is not available */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
 }
