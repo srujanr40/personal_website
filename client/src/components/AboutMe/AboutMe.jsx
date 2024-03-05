@@ -17,7 +17,7 @@ export default function AboutMe() {
             duration: 0.8
           }
         }
-      }
+    }
 
     return (
         <motion.div 
