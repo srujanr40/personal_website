@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import "./Technologies.css";
 
 
 export default function Technologies() {
+    const [listAnimationStart, setListAnimationStart] = useState(false);
+
     const cardVariants = {
         offscreen: {
             y: 300,
@@ -20,6 +22,23 @@ export default function Technologies() {
             }
         }
     }
+
+    const wipeInVariants = {
+        hidden: {
+            x: '2vw', // Start off-screen to the left
+            opacity: 0
+        },
+        visible: {
+            x: 0, // End at its natural position
+            opacity: 1,
+            transition: {
+                type: "tween",
+                duration: 0.2, // Adjust the duration as needed
+                ease: "easeInOut"
+            }
+        }
+    }
+
     return (
     <div>
       <motion.div
@@ -28,11 +47,17 @@ export default function Technologies() {
         initial='offscreen'
         whileInView='onscreen'
         viewport={{ once: true }}
+        onAnimationComplete={() => setListAnimationStart(true)} // Trigger the list animation after this animation completes
       >
         <div className="technologies_subtitle">
             <p>technologies</p>
         </div>
-        <div className="technologies_list">
+        <motion.div 
+            className="technologies_list" 
+            variants={wipeInVariants} 
+            initial='hidden' 
+            animate={listAnimationStart ? "visible" : "hidden"}
+        >
             <motion.div className="languages">
                 <p style={{fontWeight: 'bold', color: '#3d3d3d', paddingBottom: '10px'}}>Languages</p>
                 <p>C</p>
@@ -78,7 +103,7 @@ export default function Technologies() {
                 <p>scikitlearn</p>
                 <p>NLTK</p>
             </motion.div>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );
