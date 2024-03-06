@@ -69,11 +69,10 @@ export default function Projects() {
 
     return (
         <div className="projects">
-            <motion.div drag className="projects_subtitle" variants={cardVariants}>
+            <motion.div className="projects_subtitle" variants={cardVariants}>
                 <p>projects</p>
             </motion.div>
             <motion.div 
-                drag
                 className="projects_content" 
                 variants={contentVariants}
                 initial='offscreen'
@@ -88,7 +87,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}/>
+                    <img src={`${process.env.PUBLIC_URL}/reddit.png`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -106,7 +105,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/dogfish')}/>
+                    <img src={`${process.env.PUBLIC_URL}/dogFish.png`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/dogfish')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -124,7 +123,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/personal_website')}/>
+                    <img src={`${process.env.PUBLIC_URL}/logo-emoji.png`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/personal_website')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -142,7 +141,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/CernSpaceClient')}/>
+                    <img src={`${process.env.PUBLIC_URL}/CernSpaceFlat.png`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/CernSpaceClient')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -160,7 +159,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/CPSC210Project')}/>
+                    <img src={`${process.env.PUBLIC_URL}/lost.png`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/CPSC210Project')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -178,7 +177,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://devpost.com/software/quarantoned')}/>
+                    <img src={`${process.env.PUBLIC_URL}/quarantoned.png`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://devpost.com/software/quarantoned')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -196,7 +195,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/news-app')}/>
+                    <img src={`${process.env.PUBLIC_URL}/hope.png`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/news-app')}/>
                 </motion.div>
             </motion.div>
         </div>
