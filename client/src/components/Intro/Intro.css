@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
     gap: 2px;
-    padding-top: 6%;
+    padding-top: 1%;
   }
 }
 
@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
     gap: 10px;
-    padding-top: 6%;
+    padding-top: 1%;
   }
 }
 

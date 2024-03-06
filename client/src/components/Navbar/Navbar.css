@@ -1,0 +1,24 @@
+.navbar {
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: 'lora';
+    color: #3d3d3d;
+    padding-top: 2%;
+}
+
+.nav_button {
+    font-family: 'lora';
+    font-size: 130%;
+    color: #dd861d;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button_div {
+    margin-right: 20px;
+}
+
