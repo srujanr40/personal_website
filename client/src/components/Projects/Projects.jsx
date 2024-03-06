@@ -42,9 +42,6 @@ export default function Projects() {
         whileHover: {
             x: -3,
             y: -3,
-            transition: {
-                type: ''
-            }
         },
     }
 
