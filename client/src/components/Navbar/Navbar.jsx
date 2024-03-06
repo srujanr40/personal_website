@@ -22,19 +22,19 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className = "button_div" style={buttonBackgroundStyle}>
-                <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')} style={{fontWeight: 'bold'}}>Resume</motion.button>
+                <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')} style={{fontWeight: 'bold'}}>Resume</motion.button>
             </div>
             <div className = "button_div" style={buttonBackgroundStyle}>
-                <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}>About</motion.button>
+                <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}>About</motion.button>
             </div>
             <div className = "button_div" style={buttonBackgroundStyle}>
-                <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}>Technologies</motion.button>
+                <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}>Technologies</motion.button>
             </div>
             <div className = "button_div" style={buttonBackgroundStyle}>
-                <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}>Projects</motion.button>
+                <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}>Projects</motion.button>
             </div>
             <div className = "button_div" style={buttonBackgroundStyle}>
-                <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}>Experience</motion.button>
+                <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}>Experience</motion.button>
             </div>
         </div>
     )
