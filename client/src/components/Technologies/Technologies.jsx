@@ -71,7 +71,7 @@ export default function Technologies() {
             animate={listAnimationStart ? "visible" : "hidden"}
         >
             <motion.div className="languages" variants={itemVariants}>
-                <p style={{fontWeight: 'bold', color: '#3d3d3d', paddingBottom: '10px'}}>Languages</p>
+                <p style={{fontWeight: 'bold', color: '#3d3d3d', paddingBottom: '10px', marginTop: '30px'}}>Languages</p>
                 <p>C</p>
                 <p>Java</p>
                 <p>Python</p>
@@ -81,7 +81,7 @@ export default function Technologies() {
                 <p>HTML/CSS</p>
             </motion.div>
             <motion.div className="frameworks" variants={itemVariants}>
-                <p style={{fontWeight: 'bold', color: '#3d3d3d', paddingBottom: '10px'}}>Frameworks</p>
+                <p style={{fontWeight: 'bold', color: '#3d3d3d', paddingBottom: '10px', marginTop: '30px'}}>Frameworks</p>
                 <p>React</p>
                 <p>Node.js</p>
                 <p>Flask</p>
@@ -94,7 +94,7 @@ export default function Technologies() {
                 <p>Express</p>
             </motion.div>
             <motion.div className="developer_tools" variants={itemVariants}>
-                <p style={{fontWeight: 'bold', color: '#3d3d3d', paddingBottom: '10px'}}>Developer Tools</p>
+                <p style={{fontWeight: 'bold', color: '#3d3d3d', paddingBottom: '10px', marginTop: '30px'}}>Developer Tools</p>
                 <p>Git</p>
                 <p>GitHub</p>
                 <p>Linux</p>
@@ -107,7 +107,7 @@ export default function Technologies() {
                 <p>Postman</p>
             </motion.div>
             <motion.div className="libraries" variants={itemVariants}>
-                <p style={{fontWeight: 'bold', color: '#3d3d3d', paddingBottom: '10px'}}>Libraries</p>
+                <p style={{fontWeight: 'bold', color: '#3d3d3d', paddingBottom: '10px', marginTop: '30px'}}>Libraries</p>
                 <p>Chai</p>
                 <p>MongooseJS</p>
                 <p>Redux</p>

@@ -116,7 +116,7 @@ export default function Intro() {
                                 animate="bounce"
                             >
                                 <p>scroll to continue</p>
-                                <motion.span>↓</motion.span>
+                                <motion.span>👇</motion.span>
                             </motion.div>
                         </motion.div>
                     )}
