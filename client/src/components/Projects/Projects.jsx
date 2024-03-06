@@ -40,11 +40,12 @@ export default function Projects() {
 
     const learnMoreButtonVariants = {
         whileHover: {
-            scale: 1.1
+            x: -3,
+            y: -3,
+            transition: {
+                type: ''
+            }
         },
-        whileTap: {
-            scale: 0.9
-        }
     }
 
     const imageVariants = {
@@ -60,6 +61,13 @@ export default function Projects() {
             right: 20,
             bottom: 20,
         }
+    }
+
+    const buttonBackgroundStyle = {
+        backgroundColor: 'orange',
+        padding: '0px', // Adjust padding to control the size of the background
+        borderRadius: '5px', // Optional: to match the button's border-radius if it has one
+        display: 'inline-block', // Keeps the background size close to the button size
     }
 
     return (
@@ -78,10 +86,12 @@ export default function Projects() {
                 <div className="project_content_text" style={{ flex: 1 }}>
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>HappyHaiku</p>
                     <p>A bot built with Python, Pandas, and Flask that leverage NLTK to perform sentiment analysis, and generates haikus for positive comments</p>
-                    <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' whileTap='whileTap'>Learn More</motion.button>
+                    <div style={buttonBackgroundStyle}>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}>Learn More</motion.button>
+                    </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()}/>
+                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/happyhaiku')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -94,10 +104,12 @@ export default function Projects() {
                 <div className="project_content_text" style={{ flex: 1 }}>
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>dogFish</p>
                     <p>A comprehensive web application built on MongoDB, Express, React.js, and Node.js to connect players for casual sports games. Features a weighted search matchmaking algorithm, chat, email log in verification, and location preferences using the Google Maps API</p>
-                    <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' whileTap='whileTap'>Learn More</motion.button>
+                    <div style={buttonBackgroundStyle}>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/dogfish')}>Learn More</motion.button>
+                    </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()}/>
+                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/dogfish')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -110,10 +122,12 @@ export default function Projects() {
                 <div className="project_content_text" style={{ flex: 1 }}>
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>This Website!</p>
                     <p>Built using React, Node.js, and Framer Motion</p>
-                    <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' whileTap='whileTap'>Learn More</motion.button>
+                    <div style={buttonBackgroundStyle}>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/personal_website')}>Learn More</motion.button>
+                    </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()}/>
+                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/personal_website')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -126,10 +140,12 @@ export default function Projects() {
                 <div className="project_content_text" style={{ flex: 1 }}>
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>CernSpace Client</p>
                     <p>Clients built to allow users to engage in volunteer computing. Built as a project for CernFest. Web client built with HTML/CSS and desktop client built with Java and JavaFX</p>
-                    <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' whileTap='whileTap'>Learn More</motion.button>
+                    <div style={buttonBackgroundStyle}>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/CernSpaceClient')}>Learn More</motion.button>
+                    </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()}/>
+                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/CernSpaceClient')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -142,10 +158,12 @@ export default function Projects() {
                 <div className="project_content_text" style={{ flex: 1 }}>
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>Lost</p>
                     <p>A point-and-click adventure game built with Java and JavaFX for a software design course. Features user inventory and state management, and a save-and-load feature.</p>
-                    <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' whileTap='whileTap'>Learn More</motion.button>
+                    <div style={buttonBackgroundStyle}>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/CPSC210Project')}>Learn More</motion.button>
+                    </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()}/>
+                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/CPSC210Project')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -158,10 +176,12 @@ export default function Projects() {
                 <div className="project_content_text" style={{ flex: 1 }}>
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>Quarantoned</p>
                     <p>An Android application built using Java. Leverages TensorFlow Pose Estimation to measure form when doing strength training exercises and provide feedback.</p>
-                    <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' whileTap='whileTap'>Learn More</motion.button>
+                    <div style={buttonBackgroundStyle}>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://devpost.com/software/quarantoned')}>Learn More</motion.button>
+                    </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()}/>
+                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://devpost.com/software/quarantoned')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
@@ -174,10 +194,12 @@ export default function Projects() {
                 <div className="project_content_text" style={{ flex: 1 }}>
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>Hope</p>
                     <p>A web app built with Node.js and styled with HTML/CSS. Filters and displays positive news articles, and charities that do work close to the users location</p>
-                    <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' whileTap='whileTap'>Learn More</motion.button>
+                    <div style={buttonBackgroundStyle}>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => window.open('https://github.com/srujanr40/news-app')}>Learn More</motion.button>
+                    </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()}/>
+                    <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_640.jpg" alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/news-app')}/>
                 </motion.div>
             </motion.div>
         </div>
