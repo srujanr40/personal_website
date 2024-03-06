@@ -29,7 +29,7 @@ export default function Experience() {
           transition: {
             type: "spring",
             bounce: 0.4,
-            duration: 0.8
+            duration: 1.5
           }
         }
     }
