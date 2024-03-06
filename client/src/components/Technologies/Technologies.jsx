@@ -45,7 +45,7 @@ export default function Technologies() {
             opacity: 1,
             transition: {
                 type: "spring",
-                duration: 0.1, // Adjust the duration as needed
+                duration: 0.1, 
                 ease: "easeInOut"
             }
         }
