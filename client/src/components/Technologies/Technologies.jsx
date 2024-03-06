@@ -29,7 +29,7 @@ export default function Technologies() {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2, // Delay between each child animation
+                staggerChildren: 0.1, // Delay between each child animation
             }
         }
     }
