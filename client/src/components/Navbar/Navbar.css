@@ -16,6 +16,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: -1px;
 }
 
 .button_div {
@@ -36,7 +37,7 @@
 
 .switch[data-isOn="true"] {
     justify-content: flex-end;
-    background-color: #1949e8;
+    background-color: #212121;
 }
 
 .handle {

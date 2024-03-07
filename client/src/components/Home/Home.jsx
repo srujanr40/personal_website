@@ -16,11 +16,11 @@ export default function Home() {
             <Intro />
             <div style={{ height: '500px' }}></div> {/* Empty space */}
             <AboutMe />
-            <div style={{ height: '400px' }}></div> {/* Empty space */}
+            <div style={{ height: '200px' }}></div> {/* Empty space */}
             <Technologies />
-            <div style={{ height: '400px' }}></div> {/* Empty space */}
+            <div style={{ height: '300px' }}></div> {/* Empty space */}
             <Projects />
-            <div style={{ height: '400px' }}></div> {/* Empty space */}
+            <div style={{ height: '300px' }}></div> {/* Empty space */}
             <Experience />
             <div style={{ height: '400px' }}></div> {/* Empty space */}
             

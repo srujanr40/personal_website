@@ -57,7 +57,7 @@ export default function Experience() {
                         <p>LifeBooster</p>
                     </div>
                     <div className="experience_content_date">
-                        <p>September 2021 - December 2021</p>
+                        <p>May 2022 - December 2022</p>
                     </div>
                 </div>
                 <div className="experience_content_text">
@@ -76,7 +76,7 @@ export default function Experience() {
                         <p>XGen AI</p>
                     </div>
                     <div className="experience_content_date">
-                        <p>September 2021 - December 2021</p>
+                        <p>January 2021 - April 2021</p>
                     </div>
                 </div>
                 <div className="experience_content_text">

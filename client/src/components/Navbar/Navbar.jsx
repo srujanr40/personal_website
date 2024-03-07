@@ -14,8 +14,8 @@ const Navbar = () => {
 
     const learnMoreButtonVariants = {
         whileHover: {
-            x: -3,
-            y: -3,
+            x: -4,
+            y: -4,
         },
     }
 
@@ -31,11 +31,23 @@ const Navbar = () => {
 
     useEffect(() => {
         if (isOn) {
-            document.body.style.backgroundColor = "#000000"; // Use the correct color code for deep blue
-            document.body.style.color = "white";
+            document.body.style.backgroundColor = "#353b4d"; // Use the correct color code for deep blue
+            document.body.style.color = "#FFFFFF";
+            document.querySelectorAll('.nav_button').forEach(button => {
+                button.style.backgroundColor = "#353b4d";
+            });
+            document.querySelectorAll('.learn_more_button').forEach(button => {
+                button.style.backgroundColor = "#353b4d";
+            });
         } else {
             document.body.style.backgroundColor = ""; // Reset to default or previous color
             document.body.style.color = ""; // Reset to default or previous text color
+            document.querySelectorAll('.nav_button').forEach(button => {
+                button.style.backgroundColor = "#FFFFFF";
+            });
+            document.querySelectorAll('.learn_more_button').forEach(button => {
+                button.style.backgroundColor = "#FFFFFF";
+            });
         }
     }, [isOn]); 
 

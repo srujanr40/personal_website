@@ -25,7 +25,6 @@
   grid-column: 2;
   padding-top: 25%;
   font-size: 300%;
-  color: #3d3d3d;
 }
 
 .intro_card {
@@ -37,12 +36,10 @@
   display: inline-flex;
   font-family: 'lora';
   font-size: 200%;
-  color: #3d3d3d;
 }
 
 .email {
   font-family: 'lora-italic';
-  color: #3d3d3d;
 }
 
 .scroll_prompt {
@@ -53,7 +50,6 @@
   right: 0;
   text-align: center; /* Center the content horizontally */
   z-index: 1000; /* Ensure it's above other content */
-  color: #3d3d3d; 
 }
 
 .scroll_prompt p {
