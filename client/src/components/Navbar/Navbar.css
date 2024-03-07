@@ -2,7 +2,7 @@
     display: inline-flex;
     width: 100%;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     font-family: 'lora';
     color: #3d3d3d;
     padding-top: 2%;
@@ -16,9 +16,36 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: -1px;
 }
 
 .button_div {
-    margin-right: 20px;
+    margin-right: 1%;
 }
 
+.switch {
+    width: 30px;
+    height: 10px;
+    background-color: #e8ad19;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+
+.switch[data-isOn="true"] {
+    justify-content: flex-end;
+    background-color: #212121;
+}
+
+.handle {
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    margin-left: -5px;
+    margin-right: -5px;
+    background-color: white;
+    border-radius: 40px;
+}

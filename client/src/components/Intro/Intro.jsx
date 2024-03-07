@@ -78,12 +78,12 @@ export default function Intro() {
                         sequence={[
                             "HI THERE!",
                             2000,
-                            "I'M SRUJAN",
+                            "I'M SRUJAN!",
                             30000,
                         ]}
                         wrapper='h1'
                         speed={1}
-                        repeat={1}
+                        repeat={Infinity}
                     />
                 </div>
                 <br />
