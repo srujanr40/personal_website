@@ -1,9 +1,18 @@
 @media screen and (max-width: 600px) {
     .experience {
         display: grid;
-        grid-template-columns: 1fr 1fr 4fr;
+        grid-template-columns: 2fr 5fr;
         gap: 1%;
-        padding: 20%;
+    }
+
+    .experience_subtitle {
+        grid-column: 1;
+        right: 2em;
+    }
+
+    .experience_content {
+        grid-column: 2;
+        margin-right: 1em;
     }
 }
 
@@ -13,6 +22,15 @@
         grid-template-columns: 1fr 1fr 4fr 1fr;
         gap: 1%;
     }
+
+    .experience_subtitle {
+        grid-column: 2;
+        right: 4em;
+    }
+
+    .experience_content {
+        grid-column: 3;
+    }
 }
 
 .experience_subtitle {
@@ -20,13 +38,10 @@
     font-weight: bold;
     position: relative;
     display: flex;
-    justify-content: flex-end;
-    right: 4em;
-    
+    justify-content: flex-end;    
 
     font-family: 'lora';
     color: #dd861d;
-    grid-column: 2;
 }
 
 .experience_content {
@@ -37,7 +52,6 @@
     text-align: start;
     font-size: 130%;
     color: #3d3d3d;
-    grid-column: 3;
     padding-bottom: 2%;
 }
 

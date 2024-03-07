@@ -72,6 +72,7 @@ export default function Projects() {
             <motion.div className="projects_subtitle" variants={cardVariants}>
                 <p>projects</p>
             </motion.div>
+            <div className="projects_content_list">
             <motion.div 
                 className="projects_content" 
                 variants={contentVariants}
@@ -198,6 +199,7 @@ export default function Projects() {
                     <img src={`${process.env.PUBLIC_URL}/hope.png`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/news-app')}/>
                 </motion.div>
             </motion.div>
+            </div>
         </div>
     );
 }
