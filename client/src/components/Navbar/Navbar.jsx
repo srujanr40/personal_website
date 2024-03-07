@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { motion } from "framer-motion"
 
 
@@ -19,6 +19,26 @@ const Navbar = () => {
         },
     }
 
+    const spring = {
+        type: "spring",
+        stiffness: 700,
+        damping: 30
+    }
+
+    const [isOn, setIsOn] = useState(false);
+
+    const toggleSwitch = () => setIsOn(!isOn);
+
+    useEffect(() => {
+        if (isOn) {
+            document.body.style.backgroundColor = "#000000"; // Use the correct color code for deep blue
+            document.body.style.color = "white";
+        } else {
+            document.body.style.backgroundColor = ""; // Reset to default or previous color
+            document.body.style.color = ""; // Reset to default or previous text color
+        }
+    }, [isOn]); 
+
     return (
         <div className="navbar">
             <div className = "button_div" style={buttonBackgroundStyle}>
@@ -35,6 +55,9 @@ const Navbar = () => {
             </div>
             <div className = "button_div" style={buttonBackgroundStyle}>
                 <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => document.querySelector('.experience').scrollIntoView({ behavior: 'smooth', block: 'center' })}>Experience</motion.button>
+            </div>
+            <div className="switch" data-isOn={isOn} onClick={toggleSwitch}>
+                <motion.div className="handle" layout transition={spring} />
             </div>
         </div>
     )
