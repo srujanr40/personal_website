@@ -15,15 +15,15 @@ export default function Home() {
             <Navbar />
             <div style={{ height: '10px' }}></div> {/* Empty space */}
             <Intro />
-            <div style={{ height: '500px' }}></div> {/* Empty space */}
+            <div style={{ height: '35em' }}></div> {/* Empty space */}
             <AboutMe />
-            <div style={{ height: '200px' }}></div> {/* Empty space */}
+            <div style={{ height: '25em' }}></div> {/* Empty space */}
             <Technologies />
-            <div style={{ height: '300px' }}></div> {/* Empty space */}
+            <div style={{ height: '25em' }}></div> {/* Empty space */}
             <Projects />
-            <div style={{ height: '300px' }}></div> {/* Empty space */}
+            <div style={{ height: '25em' }}></div> {/* Empty space */}
             <Experience />
-            <div style={{ height: '400px' }}></div> {/* Empty space */}
+            <div style={{ height: '20em' }}></div> {/* Empty space */}
             <Footer />
             <div style={{ height: '40px' }}></div> {/* Empty space */}
         </div>

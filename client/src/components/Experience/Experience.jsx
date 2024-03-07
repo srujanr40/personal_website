@@ -20,11 +20,11 @@ export default function Experience() {
 
     const contentVariants = {
         offscreen: {
-          x: 300,
+          y: 300,
           opacity: 0
         },
         onscreen: {
-          x: 0,
+          y: 0,
           opacity: 1,
           transition: {
             type: "spring",

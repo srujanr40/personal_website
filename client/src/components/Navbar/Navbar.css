@@ -11,7 +11,6 @@
 .nav_button {
     font-family: 'lora';
     font-size: 130%;
-    color: #dd861d;
     background-color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -19,8 +18,32 @@
     margin: -1px;
 }
 
+
+@media screen and (max-width: 600px) {
+    .button_div {
+        margin-right: 0.4rem;
+    }
+
+    .nav_button {
+        font-size: 110%;
+        color: #ff9a1f;
+    }
+  }
+  
+  
+  @media screen and (min-width: 600px) {
+    .button_div {
+        margin-right: 1%;
+    }
+
+    .nav_button {
+        color: #dd861d;
+    }
+  }
+
+
 .button_div {
-    margin-right: 1%;
+    
 }
 
 .switch {
