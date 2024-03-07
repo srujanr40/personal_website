@@ -1,8 +1,12 @@
 @media screen and (max-width: 600px) {
     .about {
-        display: grid;
-        grid-template-columns: 1fr 1fr 4fr;
-        gap: 1%;
+        display: flex;
+        flex-direction: column;
+        margin: 4em;
+    }
+
+    .about_subtitle {
+        justify-content: flex-start;
     }
 }
 
@@ -12,6 +16,16 @@
         grid-template-columns: 1fr 1fr 4fr 1fr;
         gap: 1%;
     }
+
+    .about_subtitle {
+        justify-content: flex-end;
+        right: 4em;
+        grid-column: 2;
+    }
+
+    .about_text {
+        grid-column: 3;
+    }
 }
 
 .about_subtitle {
@@ -19,13 +33,9 @@
     font-weight: bold;
     position: relative;
     display: flex;
-    justify-content: flex-end;
-    right: 4em;
-    
 
     font-family: 'lora';
     color: #dd861d;
-    grid-column: 2;
 }
 
 .about_text {
@@ -33,7 +43,6 @@
     font-family: 'lora';
     text-align: start;
     font-size: 130%;
-    grid-column: 3;
 }
 
 
