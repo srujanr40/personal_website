@@ -1,0 +1,30 @@
+@media screen and (max-width: 600px) {
+    .footer {
+
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .footer {
+        padding-left: 10em;
+    }
+}
+
+.footer {
+    display: flex;
+}
+
+.footer_left {
+    font-size: 100%;
+    position: relative;
+
+    font-family: 'lora';
+}
+
+.footer_left p {
+    font-weight: bold;
+    color: #dd861d;
+    margin-top: -0.5em;
+    font-family: 'lora';
+}
+
