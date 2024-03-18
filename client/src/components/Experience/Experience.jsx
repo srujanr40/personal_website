@@ -54,7 +54,7 @@ export default function Experience() {
             >
                 <div className="experience_content_header">
                     <div className="experience_content_title">
-                        <p>LifeBooster</p>
+                        <a href="https://lifebooster.ca">LifeBooster</a>
                     </div>
                     <div className="experience_content_date">
                         <p>May 2022 - December 2022</p>
@@ -73,7 +73,7 @@ export default function Experience() {
             >
                 <div className="experience_content_header">
                     <div className="experience_content_title">
-                        <p>XGen AI</p>
+                        <a href="https://xgen.ai"> XGen AI</a>
                     </div>
                     <div className="experience_content_date">
                         <p>January 2021 - April 2021</p>

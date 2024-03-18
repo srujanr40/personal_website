@@ -57,11 +57,6 @@
     flex: 1;
 }
 
-.experience_content_title {
-    font-weight: bold;
-    margin-bottom: -20px;
-    text-align: left;
-}
 
 .experience_content_date {
     align-self: start;
@@ -78,15 +73,24 @@
     margin-top: -25px;
 }
 .experience_content_header {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     width: 100%; 
 }
 
 .experience_content_title {
+    cursor: pointer;
     flex-grow: 1; 
     text-align: left; 
+    font-weight: bold;
     margin-right: 10px; 
+}
+
+.experience_content_title a {
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 3px solid rgb(255, 170, 42); 
 }
 
 .experience_content_date {
