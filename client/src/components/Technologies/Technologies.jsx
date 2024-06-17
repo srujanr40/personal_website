@@ -73,6 +73,7 @@ export default function Technologies() {
             <motion.div className="languages" variants={itemVariants}>
                 <p style={{fontWeight: 'bold', paddingBottom: '10px', marginTop: '30px'}}>Languages</p>
                 <p>C</p>
+                <p>R</p>
                 <p>Java</p>
                 <p>Python</p>
                 <p>JavaScript</p>
