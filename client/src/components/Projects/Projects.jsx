@@ -104,6 +104,24 @@ export default function Projects() {
                 viewport={{ once: true }}
             >
                 <div className="project_content_text" style={{ flex: 1 }}>
+                    <p style={{ fontSize: '120%', fontWeight: 'bold' }}>Reinforcement Learning Cartpole</p>
+                    <p>Using Q-Learning to train an agent to balance a pole upright on a movable cart</p>
+                    <div style={buttonBackgroundStyle}>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} whileHover='whileHover' onClick={() => handleButtonClick('https://github.com/srujanr40/reinforcement-learning-cartpole', controls)}>Learn More</motion.button>
+                    </div>
+                </div>
+                <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
+                    <img src={`${process.env.PUBLIC_URL}/cartpole.png`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://github.com/srujanr40/reinforcement-learning-cartpole')}/>
+                </motion.div>
+            </motion.div>
+            <motion.div 
+                className="projects_content" 
+                variants={contentVariants}
+                initial='offscreen'
+                whileInView='onscreen'
+                viewport={{ once: true }}
+            >
+                <div className="project_content_text" style={{ flex: 1 }}>
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>HappyHaiku</p>
                     <p>A bot built with Python, Pandas, and Flask that leverage NLTK to perform sentiment analysis, and generates haikus for positive comments</p>
                     <div style={buttonBackgroundStyle}>
