@@ -112,6 +112,8 @@ export default function Technologies() {
                 <p>Chai</p>
                 <p>MongooseJS</p>
                 <p>Redux</p>
+                <p>Pandas</p>
+                <p>NumPy</p>
                 <p>MaterialUI</p>
                 <p>scikitlearn</p>
                 <p>NLTK</p>

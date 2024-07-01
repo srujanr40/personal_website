@@ -18,14 +18,28 @@
     margin: -1px;
 }
 
+.resume_nav_button {
+    font-family: 'lora';
+    font-size: 130%;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: -1px;
+}
+
 
 @media screen and (max-width: 600px) {
     .button_div {
+        display: none;
         margin-right: 0.4rem;
     }
 
     .nav_button {
-        font-size: 110%;
+        display: none;
+    }
+
+    .resume_nav_button {
         color: #ff9a1f;
     }
   }
@@ -33,18 +47,18 @@
   
   @media screen and (min-width: 600px) {
     .button_div {
+        display: none;
         margin-right: 1%;
     }
 
     .nav_button {
         color: #dd861d;
     }
+
+    .resume_nav_button {
+        color: #dd861d;
+    }
   }
-
-
-.button_div {
-    
-}
 
 .switch {
     width: 30px;

@@ -53,8 +53,8 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <div className = "button_div" style={buttonBackgroundStyle}>
-                <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' style={{fontWeight: 'bolder'}} onClick={() => window.location.href = `${process.env.PUBLIC_URL}/srujan_resume.pdf`}>Resume</motion.button>
+            <div className = "resume_div" style={buttonBackgroundStyle}>
+                <motion.button className='resume_nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' style={{fontWeight: 'bolder'}} onClick={() => window.location.href = `${process.env.PUBLIC_URL}/srujan_resume.pdf`}>Resume</motion.button>
             </div>
             <div className = "button_div" style={buttonBackgroundStyle}>
                 <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => document.querySelector('.about').scrollIntoView({ behavior: 'smooth', block: 'center' })}>About</motion.button>
