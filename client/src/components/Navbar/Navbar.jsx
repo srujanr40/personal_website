@@ -54,7 +54,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className = "resume_div" style={buttonBackgroundStyle}>
-                <motion.button className='resume_nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' style={{fontWeight: 'bolder'}} onClick={() => window.location.href = `${process.env.PUBLIC_URL}/srujan_resume.pdf`}>Resume</motion.button>
+                <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' style={{fontWeight: 'bolder'}} onClick={() => window.location.href = `${process.env.PUBLIC_URL}/srujan_resume.pdf`}>Resume</motion.button>
             </div>
             <div className = "button_div" style={buttonBackgroundStyle}>
                 <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => document.querySelector('.about').scrollIntoView({ behavior: 'smooth', block: 'center' })}>About</motion.button>
@@ -68,7 +68,7 @@ const Navbar = () => {
             <div className = "button_div" style={buttonBackgroundStyle}>
                 <motion.button className='nav_button' variants={learnMoreButtonVariants} whileHover='whileHover' onClick={() => document.querySelector('.experience').scrollIntoView({ behavior: 'smooth', block: 'center' })}>Experience</motion.button>
             </div>
-            <div className="switch" data-isOn={isOn} onClick={toggleSwitch}>
+            <div className="switch" data-ison={isOn} onClick={toggleSwitch}>
                 <motion.div className="handle" layout transition={spring} />
             </div>
         </div>
