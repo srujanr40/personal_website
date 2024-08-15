@@ -4,23 +4,7 @@ import { motion } from "framer-motion";
 export default function Experience() {
     const cardVariants = {
         offscreen: {
-          y: 300,
-          opacity: 0
-        },
-        onscreen: {
-          y: 0,
-          opacity: 1,
-          transition: {
-            type: "spring",
-            bounce: 0.4,
-            duration: 0.4
-          }
-        }
-    }
-
-    const contentVariants = {
-        offscreen: {
-          x: 300,
+          x:-100,
           opacity: 0
         },
         onscreen: {
@@ -29,9 +13,25 @@ export default function Experience() {
           transition: {
             type: "spring",
             bounce: 0.4,
-            duration: 1.5
+            duration: 0.5
           }
         }
+    }
+
+    const contentVariants = {
+        offscreen: {
+          x: 100,
+          opacity: 0
+        },
+        onscreen: {
+          x: 0,
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.2,
+            type: "tween",
+            duration: 0.4
+          }
+        },
     }
 
     return (

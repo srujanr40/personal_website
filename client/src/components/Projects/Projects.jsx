@@ -1,7 +1,7 @@
 import "./Projects.css";
 
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
+import { easeIn, motion, useAnimation } from "framer-motion";
 
 
 export default function Projects() {
@@ -23,7 +23,7 @@ export default function Projects() {
 
     const contentVariants = {
         offscreen: {
-          x: 300,
+          x: 100,
           opacity: 0
         },
         onscreen: {
@@ -31,9 +31,8 @@ export default function Projects() {
           opacity: 1,
           transition: {
             staggerChildren: 0.2,
-            type: "spring",
-            bounce: 0.4,
-            duration: 1.5
+            type: "tween",
+            duration: 0.4,
           }
         },
     }
@@ -43,7 +42,7 @@ export default function Projects() {
             x: -3,
             y: -3,
         },
-        clicked: { 
+        whileHover: { 
             x: 0,
             y: 0,
             transition: {
@@ -161,7 +160,7 @@ export default function Projects() {
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>dogFish</p>
                     <p>A comprehensive web application built on MongoDB, Express, React.js, and Node.js to connect players for casual sports games. Features a weighted search matchmaking algorithm, chat, email log in verification, and location preferences using the Google Maps API</p>
                     <div style={buttonBackgroundStyle}>
-                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' onClick={() => handleButtonClick('https://github.com/srujanr40/dogfish', controls)}>Learn More</motion.button>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} whileHover='whileHover' onClick={() => handleButtonClick('https://github.com/srujanr40/dogfish', controls)}>Learn More</motion.button>
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
@@ -179,7 +178,7 @@ export default function Projects() {
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>This Website!</p>
                     <p>Built using React, Node.js, and Framer Motion</p>
                     <div style={buttonBackgroundStyle}>
-                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} onClick={() => handleButtonClick('https://github.com/srujanr40/personal_website', controls)}>Learn More</motion.button>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} whileHover='whileHover' onClick={() => handleButtonClick('https://github.com/srujanr40/personal_website', controls)}>Learn More</motion.button>
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
@@ -197,7 +196,7 @@ export default function Projects() {
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>CernSpace Client</p>
                     <p>Clients built to allow users to engage in volunteer computing. Built as a project for CernFest. Web client built with HTML/CSS and desktop client built with Java and JavaFX</p>
                     <div style={buttonBackgroundStyle}>
-                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} onClick={() => handleButtonClick('https://github.com/srujanr40/CernSpaceClient', controls)}>Learn More</motion.button>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} whileHover='whileHover' onClick={() => handleButtonClick('https://github.com/srujanr40/CernSpaceClient', controls)}>Learn More</motion.button>
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
@@ -215,7 +214,7 @@ export default function Projects() {
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>Lost</p>
                     <p>A point-and-click adventure game built with Java and JavaFX for a software design course. Features user inventory and state management, and a save-and-load feature.</p>
                     <div style={buttonBackgroundStyle}>
-                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} onClick={() => handleButtonClick('https://github.com/srujanr40/CPSC210Project', controls)}>Learn More</motion.button>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} whileHover='whileHover' onClick={() => handleButtonClick('https://github.com/srujanr40/CPSC210Project', controls)}>Learn More</motion.button>
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
@@ -233,7 +232,7 @@ export default function Projects() {
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>Quarantoned</p>
                     <p>An Android application built using Java. Leverages TensorFlow Pose Estimation to measure form when doing strength training exercises and provide feedback.</p>
                     <div style={buttonBackgroundStyle}>
-                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} onClick={() => handleButtonClick('https://devpost.com/software/quarantoned', controls)}>Learn More</motion.button>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} whileHover='whileHover' onClick={() => handleButtonClick('https://devpost.com/software/quarantoned', controls)}>Learn More</motion.button>
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
@@ -251,7 +250,7 @@ export default function Projects() {
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>Hope</p>
                     <p>A web app built with Node.js and styled with HTML/CSS. Filters and displays positive news articles, and charities that do work close to the users location</p>
                     <div style={buttonBackgroundStyle}>
-                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} onClick={() => handleButtonClick('https://devpost.com/software/quarantoned', controls)}>Learn More</motion.button>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} whileHover='whileHover' onClick={() => handleButtonClick('https://devpost.com/software/quarantoned', controls)}>Learn More</motion.button>
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>

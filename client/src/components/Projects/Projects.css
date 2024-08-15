@@ -76,6 +76,7 @@
     height: 8em;
     object-fit: cover;
     border-radius: 20%;
+    cursor: pointer;
 }
 
 .learn_more_button {
