@@ -72,11 +72,14 @@
 }
 
 .project_img img {
-    width: 8em;
-    height: 8em;
+    width: 12em;
+    height: 9em;
     object-fit: cover;
-    border-radius: 20%;
+    border-radius: 10%;
     cursor: pointer;
+    background-size: auto;
+    background-color: #38536c;
+    box-shadow: 2px 2px 4px #1b242d;
 }
 
 .learn_more_button {

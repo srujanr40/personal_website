@@ -103,6 +103,42 @@ export default function Projects() {
                 viewport={{ once: true }}
             >
                 <div className="project_content_text" style={{ flex: 1 }}>
+                    <p style={{ fontSize: '120%', fontWeight: 'bold' }}>Soundscapes</p>
+                    <p>Create and listen to custom audio environments. Built with Next.js, Tailwind CSS, and a few open-source React component libraries, and deployed on Vercel.</p>
+                    <div style={buttonBackgroundStyle}>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} whileHover='whileHover' onClick={() => handleButtonClick('https://github.com/srujanr40/soundscapes', controls)}>Learn More</motion.button>
+                    </div>
+                </div>
+                <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
+                    <img src={`${process.env.PUBLIC_URL}/soundscapes.jpeg`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://sound-scapes.vercel.app/')}/>
+                </motion.div>
+            </motion.div>
+            <motion.div 
+                className="projects_content" 
+                variants={contentVariants}
+                initial='offscreen'
+                whileInView='onscreen'
+                viewport={{ once: true }}
+            >
+                <div className="project_content_text" style={{ flex: 1 }}>
+                    <p style={{ fontSize: '120%', fontWeight: 'bold' }}>RL Web</p>
+                    <p>A website to document my approach and solutions to reinforcement learning projects. Build with Hugo, and deployed on GitHub pages.</p>
+                    <div style={buttonBackgroundStyle}>
+                        <motion.button className='learn_more_button' variants={learnMoreButtonVariants} initial='initial' animate={controls} whileHover='whileHover' onClick={() => handleButtonClick('https://github.com/srujanr40/rl-web', controls)}>Learn More</motion.button>
+                    </div>
+                </div>
+                <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
+                    <img src={`${process.env.PUBLIC_URL}/rl-web.jpeg`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://srujanr40.github.io/rl-web/')}/>
+                </motion.div>
+            </motion.div>
+            <motion.div 
+                className="projects_content" 
+                variants={contentVariants}
+                initial='offscreen'
+                whileInView='onscreen'
+                viewport={{ once: true }}
+            >
+                <div className="project_content_text" style={{ flex: 1 }}>
                     <p style={{ fontSize: '120%', fontWeight: 'bold' }}>Reinforcement Learning Mountain Car</p>
                     <p>Using Q-Learning to train an agent to quickly and optimally get a mountain car up a hill</p>
                     <div style={buttonBackgroundStyle}>
