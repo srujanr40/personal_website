@@ -110,7 +110,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <motion.div className="project_img" variants={imageVariants} whileHover='whileHover' whileTap='whileTap' dragConstraints= {imageVariants.dragConstraints} drag>
-                    <img src={`${process.env.PUBLIC_URL}/soundscapes.jpeg`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://sound-scapes.vercel.app/')}/>
+                    <img src={`${process.env.PUBLIC_URL}/soundscapes.jpeg`} alt="Project" onDragStart={(e) => e.preventDefault()} onClick={() => window.open('https://www.soundscapes.cloud/')}/>
                 </motion.div>
             </motion.div>
             <motion.div 
